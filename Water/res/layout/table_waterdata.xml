@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.27"
+            android:background="@drawable/customer_button_selector"
+            android:text="增添记录" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:background="@drawable/background_button_div"
+            android:text="删除记录" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="40dip"
+            android:layout_height="30dp"
+            android:layout_gravity="fill"
+            android:text="序号"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="水域"
+            android:textSize="20sp" />
+		<TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="河流"
+            android:textSize="20sp" />
+		<TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="区段"
+            android:textSize="20sp" />
+		<TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="PH值"
+            android:textSize="20sp" />
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="溶解氧"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="120dip"
+            android:layout_height="30dp"
+            android:text="高猛酸盐指数"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="70dip"
+            android:layout_height="30dp"
+            android:text="氨氮"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

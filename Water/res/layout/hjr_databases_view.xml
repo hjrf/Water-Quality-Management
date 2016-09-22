@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/dbNameList"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="53dp"
+        android:background="@android:color/white" >
+    </ListView>
+
+    <Button
+        android:id="@+id/showDBNames"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示所有数据库" />
+
+    <TextView
+        android:id="@+id/currDBName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示所有数据表" />
+
+    <TextView
+        android:id="@+id/selectedDBName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/deleteDB"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除选中数据库" />
+
+    <Button
+        android:id="@+id/controlSelectedTable"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="操作选中数据库" />
+
+    <EditText
+        android:id="@+id/databaseName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/createDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="创建新数据库" />
+
+</LinearLayout>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent"  
+    android:background="#ffffff"  
+    android:orientation="vertical" >  
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/user_ba"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="107dp"
+            android:layout_gravity="top"
+            android:layout_marginTop="30dip"
+            android:orientation="horizontal" >
+  
+            <FrameLayout   
+                android:layout_width="60.0dip"   
+                android:layout_height="60.0dip"  
+                android:layout_marginLeft="15dip"
+                >  
+                <!--                     头像框 -->
+                <ImageView   
+                    android:id="@+id/userface"   
+                    android:layout_width="fill_parent"   
+                    android:layout_height="fill_parent"   
+                    android:src="@drawable/temp" />  
+				<!--                     头像	-->
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:src="@drawable/portrait_level1" />
+  
+            </FrameLayout>  
+            <LinearLayout   
+                android:layout_width="wrap_content"  
+                android:layout_height="wrap_content"  
+                android:layout_marginLeft="15dip"  
+                android:layout_marginTop="10dip"  
+                android:orientation="vertical"  
+                android:gravity="center_horizontal"
+                >  
+                <TextView   
+                    android:id="@+id/photo"  
+                    android:layout_width="wrap_content"  
+                    android:layout_height="wrap_content"  
+                    android:textColor="#FF5745"  
+                    android:layout_marginTop="5dip"  
+                    android:textSize="20sp"  
+                    android:text="我的昵称"/>  
+                 
+            </LinearLayout>  
+              
+              
+        </LinearLayout>  
+        <!-- 简介 -->  
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dip"
+        android:background="#22000000"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/intor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10.0dip"
+            android:text="个人资料"
+            android:textColor="#FF5745" />
+    </LinearLayout>
+      
+ 
+	<ScrollView
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:scrollbars="none">
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+ <View
+				android:background="@color/black2"
+				android:layout_width="fill_parent"
+				android:layout_height="1.0dip" />
+			<View
+				android:background="@color/black2"
+				android:layout_width="fill_parent"
+				android:layout_height="1.0dip" />
+	    
+		 
+		 
+		
+		<TextView
+					android:id="@+id/txt_album"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="16dp"
+					android:layout_marginTop="20dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_photo"
+					android:drawableRight="@drawable/right"
+					android:text="个人信息" />
+		<View
+			android:background="@color/black2"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip" />
+		<TextView
+					android:id="@+id/txt_collect"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="16dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_collect"
+					android:drawableRight="@drawable/right"
+					android:text="收藏" />
+		<View
+			android:background="@color/black2"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip" />
+		
+		<TextView
+					android:id="@+id/personal_setting"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="16dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_money"
+					android:drawableRight="@drawable/right"
+
+					android:text="设置" />
+		<View
+			android:background="@color/black2"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip" />
+		<TextView
+					android:id="@+id/txt_card"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="16dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_card"
+					android:drawableRight="@drawable/right"
+					android:text="待定" />
+		<View
+			android:background="@color/black2"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip" />
+		
+		
+		<TextView
+					android:id="@+id/txt_smail"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="16dp"
+					android:layout_marginTop="20dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_smail"
+					android:drawableRight="@drawable/right"
+					android:text="待定" />
+		<View
+			android:background="@color/black2"
+			android:layout_width="fill_parent"
+			android:layout_height="1.0dip" />
+		 
+		<TextView
+					android:id="@+id/txt_setting"
+					style="@style/TxtTitle"
+					android:textSize="16sp"
+					android:gravity="center_vertical"
+					android:background="@drawable/setting_item_selector"
+					android:layout_width="fill_parent"
+					android:layout_height="50dp"
+					android:paddingLeft="16dp"
+					android:paddingRight="10dp"
+					android:layout_marginTop="20dp"
+					android:drawablePadding="10dp"
+					android:drawableLeft="@drawable/icon_me_setting"
+					android:drawableRight="@drawable/right"
+					android:text="待定" />
+		<View
+				android:background="@color/black2"
+				android:layout_width="fill_parent"
+				android:layout_height="1.0dip" />
+	</LinearLayout>
+	</ScrollView>
+       
+</LinearLayout>  

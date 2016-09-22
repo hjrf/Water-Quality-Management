@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_login"
+    >
+    <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+  		
+  	<RelativeLayout 
+  	    android:id="@+id/login_div" 
+  	    android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:padding="15dip"        
+    	android:layout_margin="15dip"
+     	android:background="@drawable/background_login_div" >
+  
+  		<!-- 账号 -->
+    	<TextView 
+    		android:id="@+id/login_user_input"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignParentTop="true"
+    		android:layout_marginTop="5dp"
+    		android:text="用户名"
+    		/>
+<!--     	style="@style/normalText" -->
+    	<EditText 
+    		android:id="@+id/username_edit"
+    		android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:hint="请输入用户名"
+    		android:layout_below="@id/login_user_input"
+    		android:singleLine="true"
+    		android:inputType="text"/>
+      <!-- 密码 text -->
+      <TextView 
+      	android:id="@+id/login_password_input"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_below="@id/username_edit"
+      	android:layout_marginTop="3dp"
+      	android:text="密码"
+      	/>
+<!--       style="@style/normalText" -->
+      <EditText 
+      	android:id="@+id/password_edit"
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content"
+      	android:layout_below="@id/login_password_input"
+      	android:password="true"
+      	android:singleLine="true"
+      	android:inputType="textPassword" />
+
+      <TableRow
+          android:id="@+id/tableRow1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@id/password_edit" >
+
+          <CheckBox
+              android:id="@+id/checkBox1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="保存密码" />
+
+          <CheckBox
+              android:id="@+id/checkBox2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="自动登录" />
+
+      </TableRow>
+
+      <!-- 登录button -->
+
+      <Button
+          android:id="@+id/signin_button"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/tableRow1"
+          android:background="@drawable/customer_button_selector"
+          android:text="登录" />
+
+  	</RelativeLayout>
+  
+  	<RelativeLayout 
+      	android:layout_width="fill_parent"
+      	android:layout_height="wrap_content" >
+
+<!--     <ImageView android:id="@+id/miniTwitter_logo" -->
+<!--         android:src="@drawable/bg_login_bird" -->
+<!--         android:layout_width="wrap_content" -->
+<!--         android:layout_height="wrap_content" -->
+<!--         android:layout_alignParentRight="true" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_marginRight="25dp" -->
+<!--         android:layout_marginLeft="10dp" -->
+<!--         android:layout_marginBottom="25dp" /> -->
+<!--     <ImageView android:src="@drawable/logo" -->
+<!--       android:layout_width="wrap_content" -->
+<!--       android:layout_height="wrap_content" -->
+<!--       android:layout_toLeftOf="@id/miniTwitter_logo" -->
+<!--       android:layout_alignBottom="@id/miniTwitter_logo" -->
+<!--       android:paddingBottom="8dp"/> -->
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentLeft="true"
+         android:layout_alignParentTop="true"
+         android:text="没有账号？" />
+
+     <TextView
+         android:id="@+id/register_link"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="8dp"
+         android:layout_toRightOf="@+id/textView1"
+         android:clickable="true"
+         android:text="注册"
+         android:textColor="#0033ae"
+         android:textColorLink="#FF0066CC" />
+
+  	</RelativeLayout>
+</LinearLayout>

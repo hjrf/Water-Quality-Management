@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <ListView
+        android:id="@+id/filedList"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="53dp"
+        android:background="@android:color/white" >
+    </ListView>
+
+    <TextView
+        android:id="@+id/currTable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前选择数据表" />
+
+    <TextView
+        android:id="@+id/currTableName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+    <Button
+        android:id="@+id/showFiledList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示所有字段" />
+
+    <Button
+        android:id="@+id/enterAllRecordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="查看全部记录" />
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hjr="http://schemas.android.com/apk/res/com.android.water"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <com.android.fragment.chart.ViewHistogram
+        android:id="@+id/viewHistogram"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        hjr:chart_title="自定义柱状图"
+        hjr:chart_titleColor="@android:color/black"
+        hjr:chart_titleSize="24sp" />
+</LinearLayout>

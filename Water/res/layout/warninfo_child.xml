@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:descendantFocusability="afterDescendants"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" >
+　　    
+　　    <!-- 博文题目 -->
+ 	<TextView
+	android:id="@+id/title"
+	android:layout_marginLeft="5dp"
+	android:layout_marginTop="5dp"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:textStyle="bold"
+	android:textColor="#0000FF"
+	android:lines="1"    >
+　　    </TextView>
+　　    
+　　    <!-- 作者头像和博文概要 -->
+　　    <LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="2dp"
+	android:layout_marginLeft="5dp"
+	android:orientation="horizontal"    >
+　　        <ImageView
+	android:id="@+id/photograph"
+	android:layout_marginTop="2dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content" />
+　　     <TextView
+	android:id="@+id/summary"
+	android:layout_marginLeft="2dp"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:lines="3"    />
+　　    </LinearLayout>
+　　    
+　　    <!-- 作者昵称和发布日期 -->
+　　    <LinearLayout 
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginLeft="5dp"
+	android:layout_marginTop="2dp"
+	android:layout_marginBottom="2dp"
+	android:orientation="horizontal"    >
+　　        <TextView
+	android:id="@+id/author"
+	android:layout_width="80dp"
+	android:layout_height="wrap_content"
+	android:textColor="#0000FF"    />
+　　        <TextView
+	android:id="@+id/publishtime"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"    />
+　　    </LinearLayout>
+　　    
+　　</LinearLayout>
