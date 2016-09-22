@@ -16,7 +16,7 @@ import lecho.lib.hellocharts.view.PieChartView;
 import lecho.lib.hellocharts.view.PieChartView.PieChartOnValueTouchListener;
 
 public class LineChart extends Activity{
-
+	//折线图
 	private LineChartView lineChartView;
 //	private PieChartView piechartView;
 	String sql = null;
